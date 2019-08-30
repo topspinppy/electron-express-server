@@ -1,0 +1,33 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^6.0.5"
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7",
+    "electron-spawn": "^5.0.0",
+    "exec": "^0.2.1",
+    "kill-port": "^1.5.1",
+    "kill-port-process": "^2.1.0",
+    "morgan": "^1.9.1",
+    "node-command-line": "^1.0.2",
+    "slash": "^3.0.0"
+  }
+}
