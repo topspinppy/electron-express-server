@@ -1,5 +1,5 @@
 # electron-express-server
-
+"cross-platform api server solution stack package developed by Electron / Express
 
 ## To Use
 
