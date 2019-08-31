@@ -10,16 +10,27 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
+
+
     <div class="container">
+      <br />
       <h1>Connected With API</h1>
       <button id="openBtn" class="btn waves-effect waves-light"> Start </button>
       <button id="closeServer" class="btn waves-effect waves-light"> Close </button><br />
       <div id="status"> </div>
+      <br />
+      <h5>Logging</h5>
+      <div id="parent" style="border: 2px black solid;  width: auto; height: 20rem; overflow: auto;">
+        <div id="textarea1" contenteditable="true">
+        </div>
+      </div>
       <div id="log"></div>
       <br />
       ใส่ port ที่ต้องการ : <input type="text" value="3000" id="getport" />
     </div>
-    <!-- You can also require other files to run in this process -->
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
     <script>
       require('./renderer.js')
@@ -30,8 +41,14 @@
       });
       
       socket.on('new-message', function(data){
-          document.getElementById('log').innerHTML += data+"</br>"
+          document.getElementById('textarea1').innerHTML += data+"</br>"
       });
+
+      var textarea = document.getElementById('#parent');
+      textarea.scrollTop = textarea.scrollHeight
     </script> 
+
+
+
   </body>
 </html>

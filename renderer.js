@@ -29,6 +29,7 @@ io.on('connection', client => {
 var ls = null
 var scriptOutput = "";
 
+document.getElementById("closeServer").disabled = true;
 
 openBtn.addEventListener('click',function (event) {
     var webServerDirectory = path.join(__dirname, 'resources', 'app', 'app.js');
@@ -42,11 +43,9 @@ openBtn.addEventListener('click',function (event) {
     });
 
     ls.stderr.on('data', (data) => {
-        // console.log(`stderr: ${data}`);
-        // data = data.toString();
-
-        io.sockets.emit('new-message', `status ===> ${data} \n`)
-
+        io.sockets.emit('new-message', `
+            <font color="blue"><b> status ===> </b></font>  ${data}  <br />
+        `)
     });
 
     ls.on('close', (code) => {
@@ -62,7 +61,7 @@ openBtn.addEventListener('click',function (event) {
 
 closeServer.addEventListener('click', function(event) {
     ls.kill();
-
+    document.getElementById('textarea1').innerHTML = ""
     document.getElementById('status').innerHTML = "ระบบสิ้นสุดการทำงานแล้ว"
     document.getElementById("openBtn").disabled = false;
     document.getElementById("closeServer").disabled = true;

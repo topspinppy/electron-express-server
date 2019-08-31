@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-express-server",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "cross-platform api server solution stack package developed by Electron / Express",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/topspinppy/electron-express-server",
   "keywords": [
     "Electron",
     "quick",
@@ -14,8 +14,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Paranat Klinhom",
   "devDependencies": {
     "devtron": "^1.4.0",
     "electron": "^6.0.5"
