@@ -13,12 +13,25 @@
     <div class="container">
       <h1>Connected With API</h1>
       <button id="openBtn" class="btn waves-effect waves-light"> Start </button>
-      <button id="closeServer" class="btn waves-effect waves-light"> Close </button>
+      <button id="closeServer" class="btn waves-effect waves-light"> Close </button><br />
       <div id="status"> </div>
+      <div id="log"></div>
+      <br />
+      ใส่ port ที่ต้องการ : <input type="text" value="3000" id="getport" />
     </div>
     <!-- You can also require other files to run in this process -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
     <script>
       require('./renderer.js')
-    </script>
+
+      var socket = io("http://localhost:1000/");
+      socket.on('connect', () => {
+         socket.emit('join','Hello world from clients');
+      });
+      
+      socket.on('new-message', function(data){
+          document.getElementById('log').innerHTML += data+"</br>"
+      });
+    </script> 
   </body>
 </html>

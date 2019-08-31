@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add devtron -D
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
 
 PATH: 
   C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Topspinppy;C:\Users\Topspinppy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Topspinppy\AppData\Roaming\npm;C:\Program Files\Java\jdk-11.0.4\bin;C:\Users\Topspinppy\AppData\Local\Android\Sdk\emulator;C:\Users\Topspinppy\AppData\Local\Android\Sdk\platform-tools;C:\Users\Topspinppy\AppData\Local\Yarn\bin
@@ -36,17 +36,11 @@ npm manifest:
     "author": "GitHub",
     "license": "CC0-1.0",
     "devDependencies": {
+      "devtron": "^1.4.0",
       "electron": "^6.0.5"
     },
     "dependencies": {
-      "electron-log": "^3.0.7",
-      "electron-spawn": "^5.0.0",
-      "exec": "^0.2.1",
-      "kill-port": "^1.5.1",
-      "kill-port-process": "^2.1.0",
-      "morgan": "^1.9.1",
-      "node-command-line": "^1.0.2",
-      "slash": "^3.0.0"
+      "electron-log": "^3.0.7"
     }
   }
 
