@@ -17,7 +17,7 @@
   "author": "Paranat Klinhom",
   "devDependencies": {
     "devtron": "^1.4.0",
-    "electron": "^6.0.5"
+    "electron": "^9.4.0"
   },
   "dependencies": {
     "electron-log": "^3.0.7",
